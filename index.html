@@ -15,6 +15,22 @@
 
 </head>
 
+<script>
+    function toggleDetails(id) {
+      const full = document.getElementById(`desc-full-${id}`);
+      const main = document.getElementById(`main-content-${id}`);
+    
+      if (full.style.display === "none") {
+        full.style.display = "block";
+        main.style.visibility = "hidden";
+      } else {
+        full.style.display = "none";
+        main.style.visibility = "visible";
+      }
+    }
+    </script>
+    
+
 <body>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -29,10 +45,10 @@
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
             </li>
             <li>
-                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
             </li>
             <li>
                 <a href="#projects">Projects</a>
@@ -49,9 +65,9 @@
 
     <div id="lead">
         <div id="lead-content">
-            <h1>你好，我是猪小明</h1>
-            <h2>软件工程师</h2>
-            <a href="assets/resume.pdf" target="_blank" class="btn-rounded-white">简历下载</a>
+            <h1>Hello! I'm Changda Lyu</h1>
+            <h2>Embedded Engineer/Robotics Systems Engineer</h2>
+            <a href="assets/CV(1).pdf" target="_blank" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -72,11 +88,15 @@
             <div class="row">
 
                 <div class="col-md-4">
-                    <img class="portrait" src="assets/portrait.jpg" alt="protrait image">
+                    <img class="portrait" src="assets/thumbs/lcd_photo.jpg" alt="protrait image">
                 </div>
                 <div class="col-md-8 vertical-center">
                     <p>
-                        深度互联网从业人员，对互联网保持高度的敏感性和关注度，熟悉产品开发流程，有很强的产品规划、需求分析、交互设计能力，能独立承担APP和WEB项目的管控工作，善于沟通，贴近用户。
+                        I am a robotics systems engineer focused on automation, autonomous mobile robots, control systems, and machine learning. I am proficient in full-cycle development — from design and modeling to system integration — and capable of deploying complex perception and control algorithms efficiently on real-world hardware platforms.
+
+                        I am familiar with mainstream open-source frameworks such as ROS2, Gazebo, slam_toolbox, and Nav2, and I have a solid foundation in both embedded development and algorithm implementation. I am able to independently perform system debugging and performance optimization.
+                        
+                        My research interests include autonomous decision-making, SLAM and navigation, control system stability, and intelligent integration of multi-modal sensing. In the future, I aim to continue advancing the development of intelligent robotic systems with high robustness and real-world applicability.
                     </p>
                 </div>
 
@@ -85,49 +105,51 @@
     </div>
     <!-- End #about -->
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">实习经历</h2>
+    <div id="education" class="background-alt">
+        <h2 class="heading">Educational Background</h2>
         <div id="experience-timeline">
 
             <!-- One Experience Block -->
-            <div data-date="2012.09 - 2013.06">
-                <h3>厦门市职业圈信息科技有限公司</h3>
-                <h4>市场营销（实习生</h4>
+            <div data-date="2024.09 - ">
+                <h3>The University of Manchester   <img src="assets/thumbs/manchester.png" alt="University Image"></h3>
+                <h4>Robotics (MSc)</h4>
                 <p>
-                    负责公司线上端资源的销售工作（以开拓客户为主），公司主要资源以广点通、智汇推、百度、小米、360、沃门户等；
-                    <br>
-                    实时了解行业的变化，跟踪客户的详细数据，为客户制定更完善的投放计划（合作过珍爱网、世纪佳缘、56视频、京东等客户）
+                    Core Courses in Robotics:
+                Autonomous Mobile Robots、Robotic Systems Design Project、Foundations Machine Learning (Robotics)、Cognitive Robotics and Computer Vision (Robotics)、Robotic Systems、Robotic Manipulators、Software for Robotics
+                </p>
+            </div>
+
+            
+            <div data-date="2019.09 - 2023.07">
+                <h3>Anhui University               <img src="assets/thumbs/anhui.png" alt="University Image">
+                </h3>
+                <h4>Automation (Bachelor's Degree)</h4>
+                <p>
+                    Core Courses in Automation:
+                Control Theory、Control Theory、Signals and Systems、Principles of Automatic Control、Embedded Systems、Motor and Drive Control、Industrial Control Networks、Process Control、Modern Control Theory、Computer Control Systems、 Power Electronics、C、C++
                 </p>
             </div>
             <!-- End of One Experience Block -->
 
 
 
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat
-                    laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
-                    libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
+
 
         </div>
     </div>
     <!-- End #experience -->
 
-    <div id="education">
-        <h2 class="heading">教育经历</h2>
+    <div id="experience">
+        <h2 class="heading">Work Experience</h2>
 
         <!-- One Education Block -->
         <div class="education-block">
-            <h3>职业圈科技大学</h3>
-            <span class="education-date">2009.09 - 2013.07</span>
-            <h4>市场营销（本科）</h4>
+            <h3>Inner Mongolia Youda Building Equipment Installation Co., Ltd.</h3>
+            <span class="education-date">2023.09 - 2024.07</span>
+            <h4>Embedded Control System Engineer</h4>
             <p>
-                主修课程：
-                管理学、微观经济学、宏观经济学、管理信息系统、统计学、会计学、财务管理、市场营销、经济法、消费者行为学、国际市场营销
+                
+                Participated in the improvement of the Red Star Macalline Plaza building automation system by implementing a distributed intelligent control system, enhancing performance and stability. Applied IoT technology to connect sensors for real-time data collection and analysis, supporting system optimization. Utilized machine learning algorithms to analyze historical data, forecast foot traffic, and automate adjustments to air conditioning, lighting, and security systems, reducing energy consumption. Collaborated closely with the team to ensure timely project delivery and successful implementation.
             </p>
         </div>
         <!-- End of One Education Block -->
@@ -137,152 +159,343 @@
     <!-- End #education -->
 
     <div id="projects" class="background-alt-nth">
-        <h2 class="heading">2D 项目</h2>
-        <div class="container">
-
-            <!-- One Project 2D Block -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img class="image" src="assets/thumbs/image01-thumb.jpg" alt="assets/fulls/image01-full.jpg" />
-                </div>
-            </div>
-            <!-- End of One Project 2D Block -->
-
-
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img class="image" src="assets/thumbs/image02-thumb.jpg" alt="assets/fulls/image02-full.jpg" />
-                </div>
-                <!-- End .project-image -->
-            </div>
-            <!-- End .project -->
-
-        </div>
-    </div>
-
-    <div id="projects" class="background-alt-nth">
-        <h2 class="heading">写实风格2D</h2>
-        <div class="container">
-
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img class="image" src="assets/thumbs/image01-thumb.jpg" alt="assets/fulls/image01-full.jpg" />
-                </div>
-                <!-- End .project-image -->
-            </div>
-            <!-- End .project -->
-
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img class="image" src="assets/thumbs/image02-thumb.jpg" alt="assets/fulls/image02-full.jpg" />
-                </div>
-                <!-- End .project-image -->
-            </div>
-            <!-- End .project -->
-
-        </div>
-    </div>
-
-    <div id="projects" class="background-alt-nth">
-        <h2 class="heading">3D Projects</h2>
-        <div class="container">
-
-            <!-- One Project Video Block -->
-            <div class="project shadow-large">
-                <div class="project-video">
-                    <img class="image" src="assets/thumbs/model01-thumb.jpg" alt="assets/fulls/model01-full.mp4" />
-                </div>
-            </div>
-            <!-- End of One Project Video Block -->
-
-
-            <div class="project shadow-large">
-                <div class="project-video">
-                    <img class="image" src="assets/thumbs/model02-thumb.jpg" alt="assets/fulls/model02-full.mp4" />
-                </div>
-            </div>
-
-            <div class="project shadow-large">
-                <div class="project-video">
-                    <img class="image" src="assets/thumbs/animation01-thumb.jpg"
-                        alt="assets/fulls/animation01-full.mp4" />
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div id="projects" class="background-alt-nth">
-        <h2 class="heading">3D Models</h2>
-        <div class="container">
-
-            <!-- One Project 3DModel Block -->
-            <div class="project shadow-large">
-                <div class="project-glb">
-                    <img class="image" src="assets/thumbs/model03-thumb.jpg" alt="assets/fulls/model03-full.glb" />
-                </div>
-            </div>
-            <!-- End of One Project 3DModel Block -->
-
-
-            <div class="project shadow-large">
-                <div class="project-glb">
-                    <img class="image" src="assets/thumbs/model04-thumb.jpg" alt="assets/fulls/model04-full.glb" />
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div id="projects" class="background-alt-nth">
-        <h2 class="heading">Unity3d Projects</h2>
+        <h2 class="heading">MSc Robotics Projects</h2>
         <div class="container-game">
 
             <!-- One Project Game Block -->
             <div class="project-game shadow-large">
                 <div class="project-image">
-                    <img src="assets/thumbs/project02-thumb.jpg" />
+                  <video
+                    src="assets/thumbs/leorover.mp4"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls
+                    style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 4px;"
+                  ></video>
                 </div>
-                <div class="project-info">
-                    <h3>Flappy bird demo</h3>
-                    <p>
-                        这是一个Flappy bird 的 Demo.
+              
+                <div class="project-info" style="position: relative;">
+                  <!-- 默认显示区域 -->
+                  <div id="main-content-leo">
+                    <h3>Navigation System Development for Leo Rover</h3>
+                    <p id="desc-short-leo">
+                        In this project, I was responsible for implementing the autonomous navigation system...
                     </p>
-                    <a href="https://curryricegames.itch.io/flappybird-demo" target="_blank">View Project</a>
+                    <p>Skills: Python, Ros2, Slam, Nav2</p>
+                    <a href="https://github.com/Haoran-01/team3-project" target="_blank" class="btn-inline">Code</a>
+                    <button class="btn-inline" onclick="toggleDetails('leo')">Show More</button>
+                  </div>
+              
+                  <!-- 详情浮层 -->
+                  <div id="desc-full-leo" class="details-overlay" style="display: none;">
+                    <p>
+                        In this project, I was responsible for implementing the autonomous navigation system of the Leo Rover mobile robot, including path planning, localization, and obstacle avoidance. Using ROS2 navigation stack (Nav2) and slam_toolbox, the robot was able to perform real-time mapping and navigate to target positions in indoor environments.
+                        My tasks included configuring the navigation stack, managing maps, tuning global and local planners, and visualizing navigation states. This project strengthened my understanding of ROS2 architecture, path planning algorithms, and robotic perception.
+                    </p>
+                    <button class="btn-inline" onclick="toggleDetails('leo')">Show Less</button>
+                  </div>
                 </div>
+              </div>
+
+            <div class="project-game shadow-large">
+                <div class="project-image">
+                  <video
+                    src="assets/thumbs/plane.webm"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls
+                    style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 4px;"
+                  ></video>
+                </div>
+              
+                <div class="project-info" style="position: relative;">
+                  <!-- 默认显示区域 -->
+                  <div id="main-content-uav">
+                    <h3>Implementation and Tuning of a Hierarchical Control Structure for Quadrotor UAVs</h3>
+                    <p id="desc-short-uav">
+                      This project developed a UAV control system based on a three-level PID architecture...
+                    </p>
+                    <p>Skills: Python, PID Control</p>
+                    <a href="https://github.com/LyuCD/Implementation-and-Tuning-of-a-Hierarchical-Control-Structure-for-Quadrotor-UAVs" target="_blank" class="btn-inline">Code</a>
+                    <button class="btn-inline" onclick="toggleDetails('uav')">Show More</button>
+                  </div>
+              
+                  <!-- 详情浮层 -->
+                  <div id="desc-full-uav" class="details-overlay" style="display: none;">
+                    <p>
+                      This project developed a UAV control system based on a three-level PID architecture, consisting of position control (outer loop), velocity control (middle loop), and attitude control (inner loop). Built upon the dynamic model of a quadrotor, the system adopts a cascaded control structure to ensure stable 3D flight and accurate trajectory tracking.
+                      I was mainly responsible for control parameter design, gain tuning, and simulation testing. By carefully adjusting each level of the PID controllers, the UAV was able to achieve smooth takeoff, precise hovering, and stable flight along predefined trajectories.
+                    </p>
+                    <button class="btn-inline" onclick="toggleDetails('uav')">Show Less</button>
+                  </div>
+                </div>
+              </div>
+              
+            
+              <div class="project-game shadow-large">
+                <div class="project-image">
+                  <video
+                    src="assets/thumbs/path.webm"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls
+                    style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 4px;"
+                  ></video>
+                </div>
+              
+                <div class="project-info" style="position: relative;">
+                  <!-- 默认显示区域 -->
+                  <div id="main-content-path">
+                    <h3>A* Automatic Path Planning Algorithm</h3>
+                    <p id="desc-short-path">
+                        This project implements the classic A* (A-Star) path planning algorithm to...
+                    </p>
+                    <p> Skills: Python, A*</p>
+                    <a href="https://github.com/LyuCD/A-Automatic-Path-Planning-Algorithm" target="_blank" class="btn-inline">Code</a>
+                    <button class="btn-inline" onclick="toggleDetails('path')">Show More</button>
+                  </div>
+              
+                  <!-- 详情浮层 -->
+                  <div id="desc-full-path" class="details-overlay" style="display: none;">
+                    <p>
+                        This project implements the classic A* (A-Star) path planning algorithm to enable mobile robots to automatically find the shortest path from a starting point to a target location in a known environment. The algorithm operates on a 2D grid map, using a heuristic search strategy to effectively avoid obstacles and generate an efficient and feasible path.
+
+                        Through this project, I gained a deep understanding of the principles and implementation of graph-based search algorithms. I also developed practical skills in applying path planning techniques to robot navigation, laying a solid foundation for future integration with SLAM and motion control modules.
+                    </p>
+                    <button class="btn-inline" onclick="toggleDetails('path')">Show Less</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="project-game shadow-large">
+                <div class="project-image">
+                  <video
+                    src="assets/thumbs/coursework2.webm"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls
+                    style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 4px;"
+                  ></video>
+                </div>
+              
+                <div class="project-info" style="position: relative;">
+                  <!-- 默认显示区域 -->
+                  <div id="main-content-robot">
+                    <h3>ROS2 Simulated Cleaning Robot</h3>
+                    <p id="desc-short-robot">
+                        I built a simulated cleaning robot system using the ROS2 platform, supporting real-time mapping...
+                    </p>
+                    <p> Skills: Ros2, Python, Slam, Urdf</p>
+                    <a href="https://github.com/LyuCD/Ros2-Simulated-Clean-Robot" target="_blank" class="btn-inline">Code</a>
+                    <button class="btn-inline" onclick="toggleDetails('robot')">Show More</button>
+                  </div>
+              
+                  <!-- 详情浮层 -->
+                  <div id="desc-full-robot" class="details-overlay" style="display: none;">
+                    <p>
+                        In this project, I built a simulated cleaning robot system using the ROS2 platform, supporting real-time mapping. The system integrates slam_toolbox to perform online SLAM, allowing the robot to navigate while being controlled via keyboard input.
+                        
+                        I was responsible for constructing the robot's URDF model, setting up the Gazebo simulation environment, and developing and debugging ROS2 nodes. The system supports multi-sensor simulation and offers real-time visualization through RViz.
+                        
+                        This project deepened my understanding of ROS2 communication mechanisms and robotic system architecture.
+                    </p>
+                    <button class="btn-inline" onclick="toggleDetails('robot')">Show Less</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-game shadow-large">
+                <div class="project-image">
+                  <video
+                    src="assets/thumbs/LIDA.mp4"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls
+                    style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 4px;"
+                  ></video>
+                </div>
+              
+                <div class="project-info" style="position: relative;">
+                  <!-- 默认显示区域 -->
+                  <div id="main-content-a2m12">
+                    <h3>RPLiDAR A2M12 Performance Evaluation Video</h3>
+                    <p id="desc-short-a2m12">
+                        This project focused on the RPLiDAR A2M12 sensorThis project focused on the RPLiDAR A2M12 sensor...
+                    </p>
+                    <p>  Skills: Scriptwriting, Filming, Editing, Voice-over, and Subtitle design.</p>
+                    <button class="btn-inline" onclick="toggleDetails('a2m12')">Show More</button>
+                  </div>
+              
+                  <!-- 详情浮层 -->
+                  <div id="desc-full-a2m12" class="details-overlay" style="display: none;">
+                    <p>
+                        This project focused on the RPLiDAR A2M12 sensor, conducting comprehensive performance evaluations in a real-world testing environment. The tests covered various aspects such as distance accuracy, scanning stability, and overall data quality. I created a demonstration video to visually showcase the sensor’s performance under different scenarios, helping viewers gain a clearer understanding of its practical capabilities.
+                        I was responsible for designing the testing procedures, setting up the experimental environment, collecting and visualizing data.
+                    </p>
+                    <button class="btn-inline" onclick="toggleDetails('a2m12')">Show Less</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-game shadow-large">
+                <div class="project-image">
+                  <video
+                    src="assets/thumbs/sdgs.mp4"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls
+                    style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 4px;"
+                  ></video>
+                </div>
+              
+                <div class="project-info" style="position: relative;">
+                  <!-- 默认显示区域 -->
+                  <div id="main-content-sdg">
+                    <h3>SDG 3: Good Health and Well-being</h3>
+                    <p id="desc-short-sdg">
+                        To better understand and promote the United Nations Sustainable Development Goals (SDGs)...
+                    </p>
+                    <p>  Skills: Scriptwriting, Filming, Editing, Voice-over, and Subtitle design.</p>
+                    <button class="btn-inline" onclick="toggleDetails('sdg')">Show More</button>
+                  </div>
+              
+                  <!-- 详情浮层 -->
+                  <div id="desc-full-sdg" class="details-overlay" style="display: none;">
+                    <p>
+                        To better understand and promote the United Nations Sustainable Development Goals (SDGs), I created a themed video focused on SDG 3: Good Health and Well-being. The video highlights real-world cases to explore the major health challenges faced globally and discusses potential strategies for addressing them.
+                        Throughout the project, I was responsible for content planning, scriptwriting, filming, editing, voice-over, and subtitle design. 
+                        I learned how to craft a compelling narrative around a global issue from scratch, while also improving my skills in video editing, storytelling structure, and visual communication.
+                    </p>
+                    <button class="btn-inline" onclick="toggleDetails('sdg')">Show Less</button>
+                  </div>
+                </div>
+              </div>
+
+            <!-- End of One Project Game Block -->
+
+            
+                <!-- End .project-info -->
             </div>
+            <!-- End .project -->
+        </div>
+    </div>
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">Undergraduate Projects</h2>
+        <div class="container-game">
+
+            <!-- One Project Game Block -->
+
+            <div class="project-game shadow-large">
+                <div class="project-image">
+                    <img src="assets/thumbs/屏幕截图 2024-10-24 225112.png" />
+                </div>
+              
+                <div class="project-info" style="position: relative;">
+                  <!-- 默认显示区域 -->
+                  <div id="main-content-pid">
+                    <h3>Adaptive Tracking Control Based on Reinforcement Learning Algorithms</h3>
+                    <p id="desc-short-pid">
+                        Designed an online adaptive optimal controller for continuous-time linear systems...
+                    </p>
+                    <p>   Skills: Reinforcement Learning, PID Control, Matlab</p>
+                    <a href="https://github.com/LyuCD/Adaptive-Tracking-Control-Based-on-Reinforcement-Learning-Algorithms" target="_blank" class="btn-inline">Code</a>
+                    <button class="btn-inline" onclick="toggleDetails('pid')">Show More</button>
+                  </div>
+              
+                  <!-- 详情浮层 -->
+                  <div id="desc-full-pid" class="details-overlay" style="display: none;">
+                    <p>
+                        Designed an online adaptive optimal controller for continuous-time linear systems, applicable to systems with completely unknown dynamic characteristics.
+                        Introduced a method based on the policy iteration algorithm, utilizing approximate or adaptive dynamic programming, solving the Riccati equation through iterations.
+                        Required no prior knowledge of system matrices, with calculations performed using state and input information at fixed time intervals.
+                        Conducted simulation tests on unmanned aerial vehicle (UAV) systems, demonstrating the effectiveness of the method in throttle input and attitude control.
+                    </p>
+                    <button class="btn-inline" onclick="toggleDetails('pid')">Show Less</button>
+                  </div>
+                </div>
+              </div>
+
             <!-- End of One Project Game Block -->
 
             <div class="project-game shadow-large">
                 <div class="project-image">
-                    <img src="assets/thumbs/Counter-thumb.jpg" />
+                    <img src="assets/thumbs/大创.png" />
                 </div>
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>Counter webgl demo</h3>
-                    <p>
-                        这是一个在itch.io上的Counter Webgl 的 Demo.
+              
+                <div class="project-info" style="position: relative;">
+                  <!-- 默认显示区域 -->
+                  <div id="main-content-da">
+                    <h3>China National College Students Innovation and Entrepreneurship Training Program (National-Level Project)</h3>
+                    <p id="desc-short-da">
+                        Lead a team to develop an intelligent tracking omnidirectional platform using Mecanum wheels...
                     </p>
-                    <a href="https://curryricegames.itch.io/countertest" target="_blank">View Project</a>
+                    <p>   Skills: C, C++, STM32, OpenCV, PID Control</p>
+                    <a href="https://github.com/LyuCD/an-intelligent-tracking-omnidirectional-platform-using-Mecanum-wheels" target="_blank" class="btn-inline">Code</a>
+                    <button class="btn-inline" onclick="toggleDetails('da')">Show More</button>
+                  </div>
+              
+                  <!-- 详情浮层 -->
+                  <div id="desc-full-da" class="details-overlay" style="display: none;">
+                    <p>
+                        Lead a team to develop an intelligent tracking omnidirectional platform using Mecanum wheels, recognized with an outstanding certificate from the national panel. Responsible for programming and integrating control and visual system code, followed by debugging and report writing. The system featured visual recognition, a gyroscope stabilization system, cascade control, and fuzzy control algorithms to improve stability and maneuverability.
+                    </p>
+                    <button class="btn-inline" onclick="toggleDetails('da')">Show Less</button>
+                  </div>
                 </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <div class="project-game shadow-large">
+              </div>
+
+
+              <div class="project-game shadow-large">
                 <div class="project-image">
-                    <img src="assets/thumbs/Counter-thumb.jpg" />
+                  <video
+                    src="assets/thumbs/WeChat_20250403233653.mp4"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls
+                    style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 4px;"
+                  ></video>
                 </div>
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>Counter webgl demo</h3>
-                    <p>
-                        这是一个在Github pages上的Counter Webgl 的 Demo.
+              
+                <div class="project-info" style="position: relative;">
+                  <!-- 默认显示区域 -->
+                  <div id="main-content-ch">
+                    <h3>The 16th China National College Students Smart Car Competition (Provincial Level)</h3>
+                    <p id="desc-short-ch">
+                        Lead a team to develop a smart car based on the CH32V103 microcontroller...
                     </p>
-                    <a href="https://bretthuang2019.github.io/CounterWebgl/" target="_blank">View Project</a>
+                    <p>   Skills: C, C++,CH32V103, OpenCV, PID Control </p>
+                    <a href="https://github.com/LyuCD/The-16th-China-National-College-Students-Smart-Car-Competition?tab=readme-ov-file#the-16th-china-national-college-students-smart-car-competition" target="_blank" class="btn-inline">Code</a>
+                    <button class="btn-inline" onclick="toggleDetails('ch')">Show More</button>
+                  </div>
+              
+                  <!-- 详情浮层 -->
+                  <div id="desc-full-ch" class="details-overlay" style="display: none;">
+                    <p>
+                        Lead a team to develop a smart car based on the CH32V103 microcontroller, capable of independently recognizing routes.
+                        Allocated programming and hardware tasks related to path recognition, speed acquisition, angle control, and vehicle speed control based on team members' expertise.
+                        Independently developed the vision system using OpenCV and optimized C++ applications for continuous testing and optimization.
+                        Secured second place in the competition, recognizing the smart car’s excellent performance, programming visualization, and team collaboration.
+                    </p>
+                    <button class="btn-inline" onclick="toggleDetails('ch')">Show Less</button>
+                  </div>
                 </div>
-                <!-- End .project-info -->
-            </div>
+              </div>
+        
             <!-- End .project -->
         </div>
     </div>
@@ -319,41 +532,35 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>普通话一级甲等</li>
-            <li>大学英语四级</li>
-            <li>大学英语六级</li>
-            <li>全国计算机二级考试</li>
+            <li>C, C++, Python, MATLAB</li>
+            <li>STM32, Arduino, Raspberry</li>
+            <li>Ros2, Slam, Nav2</li>
+            <li>OpenCV, PLC</li>
+            <li>PID Control,Adaptive Control</li>
         </ul>
     </div>
     <!-- End #skills -->
 
     <div id="contact">
-        <h2>联系方式</h2>
+        <h2>Contact Information</h2>
         <div id="contact-form">
 
             <!-- One Social Icon Block -->
             <article>
                 <i class="fa fa-envelope fa-fw"></i>
-                <span>88888888@qq.com</span>
+                <span>lyuchangda@163.com</span>
             </article>
             <!-- End of One Social Icon Block -->
 
             <article>
                 <i class="fa fa-phone fa-fw"></i>
-                <span>13868686868</span>
+                <span>+44 7421072441</span>
             </article>
             <article>
                 <i class="fa fa-home fa-fw"></i>
-                <span>301, 24 test St, Montreal, QC, H1A2C2</span>
+                <span>M156AE</span>
             </article>
-            <article>
-                <i class="fa fa-weixin fa-fw"></i>
-                <span>13868686868</span>
-            </article>
-            <article>
-                <i class="fa fa-qq fa-fw"></i>
-                <span>78787878</span>
-            </article>
+
         </div>
         <!-- End #contact-form -->
     </div>
@@ -364,7 +571,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; <span id="current-year">2022</span> ZhuXiaoMing Portfolio
+                    
                     </p>
                 </div>
                 <div class="col-sm-2 top">
